@@ -436,3 +436,48 @@ body{
         gap: 2rem;
     }
 }
+
+
+// Responsive
+@media screen and (max-width: 992px) {
+    .seller{
+        .seller--product{
+            margin-bottom: 3em;
+
+            .seller--product__img{
+                text-align: center;
+
+                img{
+                    max-width: 333px;
+                    max-height: 450px;
+                    margin: 0 auto;
+                }
+
+                .img--like{
+                    right: 4em;
+                }
+            }
+
+            .seller--product__name, .seller--product__price{
+                text-align: center;
+
+            }
+        }
+    }
+
+    .stactic{
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .seller{
+        .seller--product{
+            .seller--product__img{
+                .img--like{
+                    right: 28%;
+                }
+            }    
+        }
+    }
+}
